@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* Utility */
+
+/* Header */
+
+header {
+  position: relative;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+header ul {
+  position: fixed;
+  z-index: 3;
+  right: 50px;
+  display: inline-block;
+  list-style: none;
+}
+
+header li {
+  padding: 15px 5px;
+  background: #888;
+  text-align: center;
+}
+
+header h1,
+header h3 {
+  font-family: fantasy;
+  position: relative;
+  color: white;
+  z-index: 3;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+header hr {
+  margin: 30px 0;
+  padding: 1px 200px;
+  background: #888;
+}
+
+.header-div::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/aesthetic-bg.jpg) no-repeat center center/cover;
+}
+
+/* Profile */
+
+#profile {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+}
+
+#profile .containers {
+  padding: 50px 300px;
+}
+
+.profile-div h2,
+.profile-div p {
+  text-align: center;
+}
+
+.profile-div hr {
+  width: 500px;
+  margin: 50px auto 0;
+}
+
+.profile-div h2 {
+  font-size: 40px;
+} 
+
+.profile-div p {
+  margin-top: 30px;
+}
+
+#profile img {
+  width: 200px;
+  height: auto;
+}
+
+#profile h3 {
+  margin-bottom: 20px;
+}
+
+#profile p {
+  margin-bottom: 10px;
+}
+
+#profile .about-me-div {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+#profile .img {
+  text-align: center;
+}
+
+/* Experiences */
+
+#experiences {
+  height: 85vh;
+  width: 100%;
+  background: #F3EFE0;
+}
+
+#experiences hr {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#experiences .containers {
+  padding: 50px 300px;
+}
+
+#experiences .experience-title {
+  text-align: center;
+}
+
+#experiences h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+#experiences h3 {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#experiences h4 {
+  font-size: 15px;
+}
+
+#experiences h5 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#experiences .edu-detail,
+#experiences .career-detail {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+#experiences .career-detail {
+  margin-top: 35px;
+}
+
+/* Abilities */
+
+#abilities {
+  height: 100vh;
+}
+
+#abilities h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#abilities .containers {
+  padding: 50px 300px;
+}
+
+#abilities hr {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#abilities h3 {
+  margin: 40px 0 20px 20px;
+}
+
+/* Projects */
+
+#projects {
+  height: 100vh;
+  background: #F3EFE0;
+}
+
+#projects h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#projects img {
+  width: 275px;
+  height: auto;
+  text-align: center;
+}
+
+#projects hr {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#projects .containers {
+  padding: 50px 300px;
+}
+
+#projects .projects-div {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 30px;
+  justify-items: center;
+}
+
+/* Footer */
+
+#footer {
+  height: 43vh;
+  width: 100%;
+  background: #434242;
+}
+
+#footer hr {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #888;
+}
+
+#footer a {
+  color: #fff;
+  vertical-align: middle;
+}
+
+#footer h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#footer .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#footer .contact-div {
+  margin-top: 40px;
+}
+
+#footer .containers {
+  padding: 50px 300px;
+}
+
+/* Media queries */
+
+@media (max-width: 1140px) and (min-width: 768px) {
+  #profile .containers,
+  #experiences .containers,
+  #abilities .containers,
+  #projects .containers,
+  #footer .containers {
+    padding: 20px 100px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+  #profile .containers,
+  #abilities .containers,
+  #projects .containers,
+  #footer .containers {
+    padding: 0;
+  }
+
+  #experiences .containers {
+    padding: 15px;
+  }
+
+  #experiences {
+    height: 95vh;
+  }
+
+  #profile {
+    height: 100vh;
+  }
+
+  #projects img {
+    width: 125px;
+  }
+
+  #profile .about-me-div,
+  #projects .projects-div {
+    grid-template-columns: 1fr;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #abilities {
+    height: 110vh;
+  }
+}
