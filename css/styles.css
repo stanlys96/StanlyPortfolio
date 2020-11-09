@@ -348,3 +348,13 @@ header hr {
     height: 110vh;
   }
 }
+
+@media (max-width: 500px) {
+  #profile .containers,
+  #experiences .containers,
+  #abilities .containers,
+  #projects .containers,
+  #footer .containers {
+    padding: 0;
+  } 
+}
